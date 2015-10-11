@@ -6,6 +6,7 @@ platform :ios, '8.0'
 target 'Bitmates' do
 
 pod 'AFNetworking', '~> 2.0'
+pod 'PostmatesiOS', '~> 0.0.1'
 
 end
 

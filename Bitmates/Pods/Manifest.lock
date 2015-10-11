@@ -20,11 +20,15 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - PostmatesiOS (0.0.1):
+    - AFNetworking
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - PostmatesiOS (~> 0.0.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  PostmatesiOS: a77b1d6e98aa8f0703e43cd87ec773a36cc5728f
 
 COCOAPODS: 0.39.0

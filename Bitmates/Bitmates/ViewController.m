@@ -89,7 +89,6 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     NSString *name = cell.textLabel.text;
-    
     [self.navigationController pushViewController:[[GetQuoteViewController alloc] init] animated:NO];
 }
 
