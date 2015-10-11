@@ -80,14 +80,20 @@
 }
 
 - (void)placeOrder:(id)sender {
-    [[Bitmates currentManager] searchUsersForName:@"wenger" withCallback:^(NSDictionary *res, NSError *err) {
+    [[Bitmates currentManager] searchUsersForName:self.personName withCallback:^(NSDictionary *res, NSError *err) {
         if (!err) {
             NSLog(@"%@", res);
             if (res[@"results"] && ((NSArray *)res[@"results"]).count > 0) {
                 NSDictionary *user = res[@"results"][0];
                 NSString *addr = [BMManager getBitcoinAddressOfUser:user];
                 
+                if (!addr) {
+                    NSLog(@"User does not have a valid bitcoin receiving address");
+                    return;
+                }
+                
                 NSLog(@"%@", addr);
+                
                 
                 NSMutableDictionary *params = [NSMutableDictionary new];
                 for (NSString *key in [self.formFields allKeys]) {

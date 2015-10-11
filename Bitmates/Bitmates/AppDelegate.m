@@ -20,8 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    // Set Onename API key and secret here
-    // Set PostmatesiOS customer id and api key here
+    // Set Onename api id and secret here
+    // Set Postmates customer id and api key here
     
     return YES;
 }
