@@ -33,13 +33,14 @@
     self.navigationController.navigationBarHidden = NO;
     self.navigationItem.title = personName;
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                                                   [UIFont fontWithName:@"HelveticaNeue-Light" size:16.0f],
+                                                                   [UIFont fontWithName:@"HelveticaNeue-Light" size:22.0f],
                                                                    NSFontAttributeName, nil];
+
     
-    pickField = [[UITextField alloc] initWithFrame: CGRectMake(0, 60, self.view.frame.size.width, 60)];
+    pickField = [[UITextField alloc] initWithFrame: CGRectMake(0, 60, self.view.frame.size.width, 40)];
     pickField.backgroundColor = [UIColor colorWithRed:0.886 green:0.827 blue:0.749 alpha:1];
     pickField.borderStyle = UITextBorderStyleBezel;
-    pickField.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:45.0f];
+    pickField.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:32.0f];
     pickField.adjustsFontSizeToFitWidth = YES;
     pickField.minimumFontSize = 12.0f;
     pickField.placeholder = @"Pickup";
@@ -51,10 +52,10 @@
     [self.view addSubview:pickField];
     [pickField becomeFirstResponder];
     
-    dropField = [[UITextField alloc] initWithFrame: CGRectMake(0, 120, self.view.frame.size.width, 60)];
+    dropField = [[UITextField alloc] initWithFrame: CGRectMake(0, 100, self.view.frame.size.width, 40)];
     dropField.backgroundColor = [UIColor colorWithRed:0.886 green:0.827 blue:0.749 alpha:1];
     dropField.borderStyle = UITextBorderStyleBezel;
-    dropField.font = [UIFont fontWithName:@"HelveticaNeue-Light" size: 45.0f];
+    dropField.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:32.0f];
     dropField.adjustsFontSizeToFitWidth = YES;
     dropField.minimumFontSize = 12.0f;
     dropField.placeholder = @"Dropoff";
@@ -70,7 +71,7 @@
     done.backgroundColor = [UIColor colorWithRed:0.039 green:0.122 blue:0.204 alpha:1];
     [done setTitle:@"Done" forState:UIControlStateNormal];
     done.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:24.0f];
-    done.frame = CGRectMake(0, 180, self.view.frame.size.width, self.view.frame.size.height - 224 - 180);
+    done.frame = CGRectMake(0, 140, self.view.frame.size.width, self.view.frame.size.height - 224 - 140);
     [done addTarget:self action:@selector(fireDeliveryQuote) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:done];
 }
@@ -83,8 +84,8 @@
         NSInteger duration = updatedQuote.duration;
         if(fee > 0 && duration > 0 && eta != nil){
             ConfirmQuoteViewController *confirmVC = [[ConfirmQuoteViewController alloc] init];
-            confirmVC.fee = fee;
-            confirmVC.duration = duration;
+            confirmVC.quote = updatedQuote;
+            confirmVC.personName = self.personName;
             [self.navigationController pushViewController:confirmVC animated:YES];
         }
         else{

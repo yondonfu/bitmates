@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DeliveryQuote.h"
 
 @interface ConfirmQuoteViewController : UIViewController
-@property NSInteger duration;
-@property NSInteger fee;
+
+@property (strong, nonatomic) DeliveryQuote *quote;
+@property (strong, nonatomic) NSString *personName;
+
 @end

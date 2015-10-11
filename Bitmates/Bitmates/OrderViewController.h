@@ -11,5 +11,8 @@
 @interface OrderViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
 @property (strong, nonatomic) NSString *personName;
+@property (strong, nonatomic) NSString *quoteId;
+@property (strong, nonatomic) NSString *pickUpAddress;
+@property (strong, nonatomic) NSString *dropOffAddress;
 
 @end

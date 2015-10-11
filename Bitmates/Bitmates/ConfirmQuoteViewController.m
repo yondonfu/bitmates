@@ -14,7 +14,6 @@
 @end
 
 @implementation ConfirmQuoteViewController
-@synthesize fee, duration;
 
 -(BOOL)prefersStatusBarHidden{
     return YES;
@@ -39,7 +38,7 @@
     feeLabel.textColor = [UIColor blackColor];
     feeLabel.textAlignment = NSTextAlignmentCenter;
     [feeLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:30.0f]];
-    [feeLabel setText:[NSString stringWithFormat:@"$%.02f" , (long)fee/100.00]];
+    [feeLabel setText:[NSString stringWithFormat:@"$%.02f" , (long)self.quote.fee/100.00]];
     [self.view addSubview:feeLabel];
     
     UILabel *durationLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2, 0, self.view.frame.size.width/2, 100)];
@@ -47,7 +46,7 @@
     durationLabel.backgroundColor = [UIColor whiteColor];
     durationLabel.textColor = [UIColor blackColor];
     [durationLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:30.0f]];
-    [durationLabel setText:[NSString stringWithFormat:@"%ld min" , (long)duration]];
+    [durationLabel setText:[NSString stringWithFormat:@"%ld min" , (long)self.quote.duration]];
     [self.view addSubview:durationLabel];
     
     UIButton *done = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -71,6 +70,10 @@
 
 -(void)done{
     OrderViewController *ovc = [[OrderViewController alloc] init];
+    ovc.personName = self.personName;
+    ovc.quoteId = self.quote.quoteId;
+    ovc.pickUpAddress = self.quote.pickUpAddress;
+    ovc.dropOffAddress = self.quote.dropOffAddress;
     [self.navigationController pushViewController:ovc animated:YES];
 }
 

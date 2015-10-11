@@ -24,12 +24,19 @@
     return true;
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    self.navigationController.navigationBarHidden = YES;
+- (void)viewDidAppear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void) viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"Bitmates";
+    self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                                                   [UIFont fontWithName:@"HelveticaNeue-Light" size:22.0f],
+                                                                   NSFontAttributeName, nil];
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
     
     self.view.backgroundColor = [UIColor colorWithRed:0.039 green:0.122 blue:0.204 alpha:1];
     ABAddressBookRef addressBook = ABAddressBookCreate();
@@ -71,12 +78,17 @@
     }
 }
 
--(int) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return people.count;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"contactsRow"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"contactsRow"];
+    }
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.backgroundColor = [UIColor colorWithRed:0.039 green:0.122 blue:0.204 alpha:1];
     cell.textLabel.textColor = [UIColor colorWithRed:0.886 green:0.827 blue:0.749 alpha:1];
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:16.0f];
@@ -90,11 +102,9 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *name = people[indexPath.row];
-//    GetQuoteViewController *gqvc = [[GetQuoteViewController alloc] init];
-//    gqvc.personName = name;
-    OrderViewController *orderVc = [[OrderViewController alloc] init];
-    orderVc.personName = name;
-    [self.navigationController pushViewController:orderVc animated:NO];
+    GetQuoteViewController *gqvc = [[GetQuoteViewController alloc] init];
+    gqvc.personName = name;
+    [self.navigationController pushViewController:gqvc animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {
