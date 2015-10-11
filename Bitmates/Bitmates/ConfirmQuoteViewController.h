@@ -11,5 +11,4 @@
 @interface ConfirmQuoteViewController : UIViewController
 @property NSInteger duration;
 @property NSInteger fee;
-@property NSDate *eta;
 @end

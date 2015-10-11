@@ -84,9 +84,8 @@
         if(fee > 0 && duration > 0 && eta != nil){
             ConfirmQuoteViewController *confirmVC = [[ConfirmQuoteViewController alloc] init];
             confirmVC.fee = fee;
-            confirmVC.eta = eta;
             confirmVC.duration = duration;
-            [self.navigationController presentViewController:confirmVC animated:YES completion:nil];
+            [self.navigationController pushViewController:confirmVC animated:YES];
         }
         else{
             NSString *msg = @"";
