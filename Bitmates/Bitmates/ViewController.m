@@ -33,8 +33,7 @@
     
     self.view.backgroundColor = [UIColor colorWithRed:0.039 green:0.122 blue:0.204 alpha:1];
     ABAddressBookRef addressBook = ABAddressBookCreate();
-    if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusNotDetermined)
-    {
+    if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusNotDetermined){
         ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
             if(error){
                 NSLog(@"ERROR%@", (NSError *)CFBridgingRelease(error));

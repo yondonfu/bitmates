@@ -19,6 +19,7 @@
 		97197CFA1BCA4A7100C20A17 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97197CF91BCA4A7100C20A17 /* AddressBookUI.framework */; };
 		97197CFD1BCA575100C20A17 /* GetQuoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97197CFC1BCA575100C20A17 /* GetQuoteViewController.m */; settings = {ASSET_TAGS = (); }; };
 		97197D001BCA66E600C20A17 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97197CFF1BCA66E600C20A17 /* OrderViewController.m */; settings = {ASSET_TAGS = (); }; };
+		97197D031BCA757800C20A17 /* ConfirmQuoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97197D021BCA757800C20A17 /* ConfirmQuoteViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DDF4E36E346106B82EA3D766 /* libPods-Bitmates.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E82AF85CCD49A7BA42A99C /* libPods-Bitmates.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,8 @@
 		97197CFC1BCA575100C20A17 /* GetQuoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetQuoteViewController.m; sourceTree = "<group>"; };
 		97197CFE1BCA66E600C20A17 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
 		97197CFF1BCA66E600C20A17 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		97197D011BCA757800C20A17 /* ConfirmQuoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmQuoteViewController.h; sourceTree = "<group>"; };
+		97197D021BCA757800C20A17 /* ConfirmQuoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmQuoteViewController.m; sourceTree = "<group>"; };
 		C0E82AF85CCD49A7BA42A99C /* libPods-Bitmates.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bitmates.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36815969ED30993140296FC /* Pods-Bitmates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitmates.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitmates/Pods-Bitmates.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +103,8 @@
 				773DC1041BC9E62300B8DF1F /* ViewController.m */,
 				97197CFB1BCA575100C20A17 /* GetQuoteViewController.h */,
 				97197CFC1BCA575100C20A17 /* GetQuoteViewController.m */,
+				97197D011BCA757800C20A17 /* ConfirmQuoteViewController.h */,
+				97197D021BCA757800C20A17 /* ConfirmQuoteViewController.m */,
 				97197CFE1BCA66E600C20A17 /* OrderViewController.h */,
 				97197CFF1BCA66E600C20A17 /* OrderViewController.m */,
 				97197CF51BCA48FA00C20A17 /* Main.storyboard */,
@@ -256,6 +261,7 @@
 				773DC1161BC9E64F00B8DF1F /* BMManager.m in Sources */,
 				773DC1191BC9E65F00B8DF1F /* Bitmates.m in Sources */,
 				773DC1051BC9E62300B8DF1F /* ViewController.m in Sources */,
+				97197D031BCA757800C20A17 /* ConfirmQuoteViewController.m in Sources */,
 				97197D001BCA66E600C20A17 /* OrderViewController.m in Sources */,
 				97197CFD1BCA575100C20A17 /* GetQuoteViewController.m in Sources */,
 				773DC1021BC9E62300B8DF1F /* AppDelegate.m in Sources */,

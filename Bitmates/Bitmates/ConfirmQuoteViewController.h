@@ -1,5 +1,5 @@
 //
-//  GetQuoteViewController.h
+//  ConfirmQuoteViewController.h
 //  Bitmates
 //
 //  Created by Snaheth Thumathy on 10/11/15.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GetQuoteViewController : UIViewController<UITextFieldDelegate>
-@property NSString *personName;
+@interface ConfirmQuoteViewController : UIViewController
+@property NSInteger duration;
+@property NSInteger fee;
 @end
