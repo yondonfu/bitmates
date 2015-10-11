@@ -11,6 +11,7 @@
 #import <AddressBook/AddressBook.h>
 #import "GetQuoteViewController.h"
 #import "Bitmates.h"
+#import "OrderViewController.h"
 
 @interface ViewController ()
 @property NSArray *people;
@@ -61,8 +62,11 @@
         for (int i = 0; i < CFArrayGetCount(arrRef); i++) {
             ABRecordRef person = CFArrayGetValueAtIndex(arrRef, i);
             CFStringRef name = ABRecordCopyCompositeName(person);
-            [names addObject:(__bridge NSString *)name];
-            CFRelease(name);
+            if (name) {
+                [names addObject:(__bridge NSString *)name];
+                CFRelease(name);
+            }
+            
         }
         people = names;
     }
@@ -87,9 +91,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *name = people[indexPath.row];
-    GetQuoteViewController *gqvc = [[GetQuoteViewController alloc] init];
-    gqvc.personName = name;
-    [self.navigationController pushViewController:gqvc animated:NO];
+//    GetQuoteViewController *gqvc = [[GetQuoteViewController alloc] init];
+//    gqvc.personName = name;
+    OrderViewController *orderVc = [[OrderViewController alloc] init];
+    orderVc.personName = name;
+    [self.navigationController pushViewController:orderVc animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {

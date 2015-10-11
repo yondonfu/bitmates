@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OrderViewController : UIViewController
+@interface OrderViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+
+@property (strong, nonatomic) NSString *personName;
 
 @end
