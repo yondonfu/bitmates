@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GetQuoteViewController : UIViewController
+@interface GetQuoteViewController : UIViewController<UITextFieldDelegate>
 @property NSString *personName;
 @end

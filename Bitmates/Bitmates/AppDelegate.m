@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Bitmates.h"
-#import "ViewController.h"
+#import "Postmates.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [Postmates setCustomerId:@"cus_KBJleyUPBKQz3-" apiKey:@"f5c0691e-d66b-485a-8d52-145c2d38942f"];
     return YES;
 }
 
