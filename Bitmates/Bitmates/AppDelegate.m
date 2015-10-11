@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Bitmates.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 

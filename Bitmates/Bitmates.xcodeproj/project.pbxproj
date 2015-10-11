@@ -14,6 +14,10 @@
 		773DC1161BC9E64F00B8DF1F /* BMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DC1151BC9E64F00B8DF1F /* BMManager.m */; settings = {ASSET_TAGS = (); }; };
 		773DC1191BC9E65F00B8DF1F /* Bitmates.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DC1181BC9E65F00B8DF1F /* Bitmates.m */; settings = {ASSET_TAGS = (); }; };
 		773DC11C1BC9F54A00B8DF1F /* BMWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DC11B1BC9F54A00B8DF1F /* BMWallet.m */; settings = {ASSET_TAGS = (); }; };
+		97197CF61BCA48FB00C20A17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97197CF51BCA48FA00C20A17 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		97197CF81BCA4A6D00C20A17 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97197CF71BCA4A6D00C20A17 /* AddressBook.framework */; };
+		97197CFA1BCA4A7100C20A17 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97197CF91BCA4A7100C20A17 /* AddressBookUI.framework */; };
+		97197CFD1BCA575100C20A17 /* GetQuoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97197CFC1BCA575100C20A17 /* GetQuoteViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DDF4E36E346106B82EA3D766 /* libPods-Bitmates.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E82AF85CCD49A7BA42A99C /* libPods-Bitmates.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +37,11 @@
 		773DC1181BC9E65F00B8DF1F /* Bitmates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bitmates.m; sourceTree = "<group>"; };
 		773DC11A1BC9F54A00B8DF1F /* BMWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWallet.h; sourceTree = "<group>"; };
 		773DC11B1BC9F54A00B8DF1F /* BMWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWallet.m; sourceTree = "<group>"; };
+		97197CF51BCA48FA00C20A17 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		97197CF71BCA4A6D00C20A17 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		97197CF91BCA4A7100C20A17 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		97197CFB1BCA575100C20A17 /* GetQuoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetQuoteViewController.h; sourceTree = "<group>"; };
+		97197CFC1BCA575100C20A17 /* GetQuoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetQuoteViewController.m; sourceTree = "<group>"; };
 		C0E82AF85CCD49A7BA42A99C /* libPods-Bitmates.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bitmates.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36815969ED30993140296FC /* Pods-Bitmates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitmates.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitmates/Pods-Bitmates.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97197CFA1BCA4A7100C20A17 /* AddressBookUI.framework in Frameworks */,
+				97197CF81BCA4A6D00C20A17 /* AddressBook.framework in Frameworks */,
 				DDF4E36E346106B82EA3D766 /* libPods-Bitmates.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +63,8 @@
 		1EB2C220F43FB01C0895A9D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97197CF91BCA4A7100C20A17 /* AddressBookUI.framework */,
+				97197CF71BCA4A6D00C20A17 /* AddressBook.framework */,
 				C0E82AF85CCD49A7BA42A99C /* libPods-Bitmates.a */,
 			);
 			name = Frameworks;
@@ -82,6 +95,9 @@
 				773DC1011BC9E62300B8DF1F /* AppDelegate.m */,
 				773DC1031BC9E62300B8DF1F /* ViewController.h */,
 				773DC1041BC9E62300B8DF1F /* ViewController.m */,
+				97197CFB1BCA575100C20A17 /* GetQuoteViewController.h */,
+				97197CFC1BCA575100C20A17 /* GetQuoteViewController.m */,
+				97197CF51BCA48FA00C20A17 /* Main.storyboard */,
 				773DC1141BC9E64F00B8DF1F /* BMManager.h */,
 				773DC1151BC9E64F00B8DF1F /* BMManager.m */,
 				773DC1171BC9E65F00B8DF1F /* Bitmates.h */,
@@ -173,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				773DC10A1BC9E62300B8DF1F /* Assets.xcassets in Resources */,
+				97197CF61BCA48FB00C20A17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +251,7 @@
 				773DC1161BC9E64F00B8DF1F /* BMManager.m in Sources */,
 				773DC1191BC9E65F00B8DF1F /* Bitmates.m in Sources */,
 				773DC1051BC9E62300B8DF1F /* ViewController.m in Sources */,
+				97197CFD1BCA575100C20A17 /* GetQuoteViewController.m in Sources */,
 				773DC1021BC9E62300B8DF1F /* AppDelegate.m in Sources */,
 				773DC0FF1BC9E62300B8DF1F /* main.m in Sources */,
 				773DC11C1BC9F54A00B8DF1F /* BMWallet.m in Sources */,
@@ -329,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Bitmates/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chs.Bitmates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -341,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Bitmates/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chs.Bitmates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
