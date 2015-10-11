@@ -14,12 +14,15 @@
 
 @implementation GetQuoteViewController
 
+-(void)viewDidAppear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = NO;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.navigationController.navigationBarHidden = FALSE;
-    
+        
 }
 
 - (void)didReceiveMemoryWarning {

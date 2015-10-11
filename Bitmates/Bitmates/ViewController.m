@@ -22,6 +22,10 @@
     return true;
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = NO;
+}
+
 - (void) viewDidLoad {
     [super viewDidLoad];
     
@@ -86,7 +90,7 @@
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     NSString *name = cell.textLabel.text;
     
-    [self.navigationController pushViewController:[[GetQuoteViewController alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[GetQuoteViewController alloc] init] animated:NO];
 }
 
 
