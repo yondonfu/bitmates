@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		773DC0FF1BC9E62300B8DF1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DC0FE1BC9E62300B8DF1F /* main.m */; };
+		773DC1021BC9E62300B8DF1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DC1011BC9E62300B8DF1F /* AppDelegate.m */; };
+		773DC1051BC9E62300B8DF1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DC1041BC9E62300B8DF1F /* ViewController.m */; };
+		773DC1081BC9E62300B8DF1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773DC1061BC9E62300B8DF1F /* Main.storyboard */; };
+		773DC10A1BC9E62300B8DF1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773DC1091BC9E62300B8DF1F /* Assets.xcassets */; };
+		773DC10D1BC9E62300B8DF1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773DC10B1BC9E62300B8DF1F /* LaunchScreen.storyboard */; };
+		773DC1161BC9E64F00B8DF1F /* BMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DC1151BC9E64F00B8DF1F /* BMManager.m */; settings = {ASSET_TAGS = (); }; };
+		773DC1191BC9E65F00B8DF1F /* Bitmates.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DC1181BC9E65F00B8DF1F /* Bitmates.m */; settings = {ASSET_TAGS = (); }; };
+		DDF4E36E346106B82EA3D766 /* libPods-Bitmates.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E82AF85CCD49A7BA42A99C /* libPods-Bitmates.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47E356CB745B5556C774743F /* Pods-Bitmates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitmates.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bitmates/Pods-Bitmates.release.xcconfig"; sourceTree = "<group>"; };
+		773DC0FA1BC9E62300B8DF1F /* Bitmates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitmates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		773DC0FE1BC9E62300B8DF1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		773DC1001BC9E62300B8DF1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		773DC1011BC9E62300B8DF1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		773DC1031BC9E62300B8DF1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		773DC1041BC9E62300B8DF1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		773DC1071BC9E62300B8DF1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		773DC1091BC9E62300B8DF1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		773DC10C1BC9E62300B8DF1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		773DC10E1BC9E62300B8DF1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		773DC1141BC9E64F00B8DF1F /* BMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMManager.h; sourceTree = "<group>"; };
+		773DC1151BC9E64F00B8DF1F /* BMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMManager.m; sourceTree = "<group>"; };
+		773DC1171BC9E65F00B8DF1F /* Bitmates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bitmates.h; sourceTree = "<group>"; };
+		773DC1181BC9E65F00B8DF1F /* Bitmates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bitmates.m; sourceTree = "<group>"; };
+		C0E82AF85CCD49A7BA42A99C /* libPods-Bitmates.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bitmates.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E36815969ED30993140296FC /* Pods-Bitmates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitmates.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitmates/Pods-Bitmates.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		773DC0F71BC9E62300B8DF1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF4E36E346106B82EA3D766 /* libPods-Bitmates.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EB2C220F43FB01C0895A9D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0E82AF85CCD49A7BA42A99C /* libPods-Bitmates.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		773DC0F11BC9E62300B8DF1F = {
+			isa = PBXGroup;
+			children = (
+				773DC0FC1BC9E62300B8DF1F /* Bitmates */,
+				773DC0FB1BC9E62300B8DF1F /* Products */,
+				88CF26B0881C4931836F0C57 /* Pods */,
+				1EB2C220F43FB01C0895A9D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		773DC0FB1BC9E62300B8DF1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				773DC0FA1BC9E62300B8DF1F /* Bitmates.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		773DC0FC1BC9E62300B8DF1F /* Bitmates */ = {
+			isa = PBXGroup;
+			children = (
+				773DC1001BC9E62300B8DF1F /* AppDelegate.h */,
+				773DC1011BC9E62300B8DF1F /* AppDelegate.m */,
+				773DC1031BC9E62300B8DF1F /* ViewController.h */,
+				773DC1041BC9E62300B8DF1F /* ViewController.m */,
+				773DC1061BC9E62300B8DF1F /* Main.storyboard */,
+				773DC1091BC9E62300B8DF1F /* Assets.xcassets */,
+				773DC10B1BC9E62300B8DF1F /* LaunchScreen.storyboard */,
+				773DC10E1BC9E62300B8DF1F /* Info.plist */,
+				773DC0FD1BC9E62300B8DF1F /* Supporting Files */,
+				773DC1141BC9E64F00B8DF1F /* BMManager.h */,
+				773DC1151BC9E64F00B8DF1F /* BMManager.m */,
+				773DC1171BC9E65F00B8DF1F /* Bitmates.h */,
+				773DC1181BC9E65F00B8DF1F /* Bitmates.m */,
+			);
+			path = Bitmates;
+			sourceTree = "<group>";
+		};
+		773DC0FD1BC9E62300B8DF1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				773DC0FE1BC9E62300B8DF1F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88CF26B0881C4931836F0C57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E36815969ED30993140296FC /* Pods-Bitmates.debug.xcconfig */,
+				47E356CB745B5556C774743F /* Pods-Bitmates.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		773DC0F91BC9E62300B8DF1F /* Bitmates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 773DC1111BC9E62300B8DF1F /* Build configuration list for PBXNativeTarget "Bitmates" */;
+			buildPhases = (
+				06E172D2F4E65CFA619A33B1 /* Check Pods Manifest.lock */,
+				773DC0F61BC9E62300B8DF1F /* Sources */,
+				773DC0F71BC9E62300B8DF1F /* Frameworks */,
+				773DC0F81BC9E62300B8DF1F /* Resources */,
+				8B1F0F8DF989C0D27FA13292 /* Embed Pods Frameworks */,
+				6ABD1FC2E9988C473926E31E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bitmates;
+			productName = Bitmates;
+			productReference = 773DC0FA1BC9E62300B8DF1F /* Bitmates.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		773DC0F21BC9E62300B8DF1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = calhackssquad;
+				TargetAttributes = {
+					773DC0F91BC9E62300B8DF1F = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 773DC0F51BC9E62300B8DF1F /* Build configuration list for PBXProject "Bitmates" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 773DC0F11BC9E62300B8DF1F;
+			productRefGroup = 773DC0FB1BC9E62300B8DF1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				773DC0F91BC9E62300B8DF1F /* Bitmates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		773DC0F81BC9E62300B8DF1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773DC10D1BC9E62300B8DF1F /* LaunchScreen.storyboard in Resources */,
+				773DC10A1BC9E62300B8DF1F /* Assets.xcassets in Resources */,
+				773DC1081BC9E62300B8DF1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06E172D2F4E65CFA619A33B1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6ABD1FC2E9988C473926E31E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bitmates/Pods-Bitmates-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B1F0F8DF989C0D27FA13292 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bitmates/Pods-Bitmates-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		773DC0F61BC9E62300B8DF1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773DC1161BC9E64F00B8DF1F /* BMManager.m in Sources */,
+				773DC1191BC9E65F00B8DF1F /* Bitmates.m in Sources */,
+				773DC1051BC9E62300B8DF1F /* ViewController.m in Sources */,
+				773DC1021BC9E62300B8DF1F /* AppDelegate.m in Sources */,
+				773DC0FF1BC9E62300B8DF1F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		773DC1061BC9E62300B8DF1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				773DC1071BC9E62300B8DF1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		773DC10B1BC9E62300B8DF1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				773DC10C1BC9E62300B8DF1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		773DC10F1BC9E62300B8DF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		773DC1101BC9E62300B8DF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		773DC1121BC9E62300B8DF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E36815969ED30993140296FC /* Pods-Bitmates.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Bitmates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chs.Bitmates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		773DC1131BC9E62300B8DF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47E356CB745B5556C774743F /* Pods-Bitmates.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Bitmates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chs.Bitmates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		773DC0F51BC9E62300B8DF1F /* Build configuration list for PBXProject "Bitmates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773DC10F1BC9E62300B8DF1F /* Debug */,
+				773DC1101BC9E62300B8DF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		773DC1111BC9E62300B8DF1F /* Build configuration list for PBXNativeTarget "Bitmates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773DC1121BC9E62300B8DF1F /* Debug */,
+				773DC1131BC9E62300B8DF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 773DC0F21BC9E62300B8DF1F /* Project object */;
+}
