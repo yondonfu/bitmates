@@ -15,6 +15,7 @@
 		773DC10D1BC9E62300B8DF1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773DC10B1BC9E62300B8DF1F /* LaunchScreen.storyboard */; };
 		773DC1161BC9E64F00B8DF1F /* BMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DC1151BC9E64F00B8DF1F /* BMManager.m */; settings = {ASSET_TAGS = (); }; };
 		773DC1191BC9E65F00B8DF1F /* Bitmates.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DC1181BC9E65F00B8DF1F /* Bitmates.m */; settings = {ASSET_TAGS = (); }; };
+		773DC11C1BC9F54A00B8DF1F /* BMWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DC11B1BC9F54A00B8DF1F /* BMWallet.m */; settings = {ASSET_TAGS = (); }; };
 		DDF4E36E346106B82EA3D766 /* libPods-Bitmates.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E82AF85CCD49A7BA42A99C /* libPods-Bitmates.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,8 @@
 		773DC1151BC9E64F00B8DF1F /* BMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMManager.m; sourceTree = "<group>"; };
 		773DC1171BC9E65F00B8DF1F /* Bitmates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bitmates.h; sourceTree = "<group>"; };
 		773DC1181BC9E65F00B8DF1F /* Bitmates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bitmates.m; sourceTree = "<group>"; };
+		773DC11A1BC9F54A00B8DF1F /* BMWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWallet.h; sourceTree = "<group>"; };
+		773DC11B1BC9F54A00B8DF1F /* BMWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWallet.m; sourceTree = "<group>"; };
 		C0E82AF85CCD49A7BA42A99C /* libPods-Bitmates.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bitmates.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36815969ED30993140296FC /* Pods-Bitmates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitmates.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitmates/Pods-Bitmates.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +95,8 @@
 				773DC1151BC9E64F00B8DF1F /* BMManager.m */,
 				773DC1171BC9E65F00B8DF1F /* Bitmates.h */,
 				773DC1181BC9E65F00B8DF1F /* Bitmates.m */,
+				773DC11A1BC9F54A00B8DF1F /* BMWallet.h */,
+				773DC11B1BC9F54A00B8DF1F /* BMWallet.m */,
 			);
 			path = Bitmates;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 				773DC1051BC9E62300B8DF1F /* ViewController.m in Sources */,
 				773DC1021BC9E62300B8DF1F /* AppDelegate.m in Sources */,
 				773DC0FF1BC9E62300B8DF1F /* main.m in Sources */,
+				773DC11C1BC9F54A00B8DF1F /* BMWallet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
