@@ -14,8 +14,8 @@
 
 static BMManager *currentBMManager;
 
-+ (void)setUp {
-    BMManager *manager = [[BMManager alloc] init];
++ (void)setAPIId:(NSString *)apiId andAPISecret:(NSString *)apiSecret {
+    BMManager *manager = [[BMManager alloc] initWithApiId:apiId andApiSecret:apiSecret];
     
     currentBMManager = manager;
 }

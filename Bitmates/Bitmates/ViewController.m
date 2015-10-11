@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "BMWallet.h"
+#import "Bitmates.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-
 
 
 - (void)didReceiveMemoryWarning {
