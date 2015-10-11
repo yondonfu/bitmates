@@ -10,6 +10,7 @@
 #import "BMWallet.h"
 #import <AddressBook/AddressBook.h>
 #import "GetQuoteViewController.h"
+#import "Bitmates.h"
 
 @interface ViewController ()
 @property NSArray *people;
@@ -23,13 +24,12 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void) viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationController.navigationBarHidden = true;
     self.view.backgroundColor = [UIColor colorWithRed:0.039 green:0.122 blue:0.204 alpha:1];
     ABAddressBookRef addressBook = ABAddressBookCreate();
     if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusNotDetermined)
@@ -92,7 +92,6 @@
     
     [self.navigationController pushViewController:[[GetQuoteViewController alloc] init] animated:NO];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

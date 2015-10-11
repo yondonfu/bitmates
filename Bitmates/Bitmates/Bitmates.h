@@ -11,7 +11,7 @@
 
 @interface Bitmates : NSObject
 
-+ (void)setUp;
++ (void)setAPIId:(NSString *)apiId andAPISecret:(NSString *)apiSecret;
 + (BMManager *)currentManager;
 + (void)clearCurrentManager;
 
