@@ -1,5 +1,5 @@
 //
-//  GetQuoteViewController.h
+//  OrderViewController.h
 //  Bitmates
 //
 //  Created by Snaheth Thumathy on 10/11/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GetQuoteViewController : UIViewController
-@property NSString *personName;
+@interface OrderViewController : UIViewController
+
 @end

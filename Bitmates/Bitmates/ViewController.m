@@ -82,14 +82,14 @@
     UIView *myBackView = [[UIView alloc] initWithFrame:cell.frame];
     myBackView.backgroundColor = [UIColor blackColor];
     cell.selectedBackgroundView = myBackView;
-    
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    NSString *name = cell.textLabel.text;
-    [self.navigationController pushViewController:[[GetQuoteViewController alloc] init] animated:NO];
+    NSString *name = people[indexPath.row];
+    GetQuoteViewController *gqvc = [[GetQuoteViewController alloc] init];
+    gqvc.personName = name;
+    [self.navigationController pushViewController:gqvc animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {
